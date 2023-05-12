@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carpooling - Explore</title>
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+  </head>
+  <body>
+    <header>
+      <h1>Carpooling</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section id="explore">
+        <h2>Explore</h2>
+        <form>
+          <label for="starting-location">Starting Location:</label>
+          <input type="text" id="starting-location" name="starting-location" required>
+
+          <label for="destination">Destination:</label>
+          <input type="text" id="destination" name="destination" required>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+
+          <input type="submit" value="Search">
+        </form>
+        
+        <div class="results">
+          <h3>Search Results:</h3>
+          <ul>
+            <li>
+              <img src="driver-photo.jpg" alt="Driver Photo">
+              <div class="details">
+                <h4>John Doe</h4>
+                <p>Car Make: Honda</p>
+                <p>Car Model: Civic</p>
+                <p>Seats Available: 3</p>
+                <p>Price per Seat: $10</p>
+              </div>
+              <div class="book-now">
+                <a href="location.html">Book Now</a>
+              </div>
+            </li>
+            <li>
+              <img src="driver-photo.jpg" alt="Driver Photo">
+              <div class="details">
+                <h4>Jane Doe</h4>
+                <p>Car Make: Toyota</p>
+                <p>Car Model: Corolla</p>
+                <p>Seats Available: 2</p>
+                <p>Price per Seat: $8</p>
+              </div>
+              <div class="book-now">
+                <a href="location.html">Book Now</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Carpooling</p>
+    </footer>
+  </body>
+</html>

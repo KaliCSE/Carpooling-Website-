@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Location Page</title>
+    <link rel="icon" href="images/logo.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="col6">
+                <img src="images/logo.png" class="logo">
+                <!-- <div class="location">
+                    <div class="input-box">
+                        <i class="fa fa-map-marker"></i>
+                        <input type="text" placeholder="Enter your start location" id="start" />
+                            <i class="fa fa-long-arrow-right"></i>
+                    </div>
+                    <div class="input-box">
+                        <i class="fa fa-map-marker"></i>
+                        <input type="text" placeholder="Enter your end location" id="end" />
+                        <button class="s-btn" onclick="locationPage()">
+                            <i class="fa fa-long-arrow-right"></i>
+                        </button>
+                    </div>
+                </div> -->
+                
+            </div>
+            <div class="col6">
+                <ul class="topnav">
+                    <li><a href="#">Ride</a></li>
+                    <li><a href="#">Drive</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="login.html">Sign in</a></li>
+                    <li><button class="btn-r">Ride With carpool</button></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    
+        <div class="header-bottom">
+            <div class="container">
+                <ul class="bottomnav">
+                    <li class="active"><a href="index.html"><i class="fa fa-home"></i>  Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-exclamation-circle"></i>  About</a></li>
+                    <li><a href="service.html"><i class="fa fa-gear"></i>  Our Services</a></li>
+                    <li><a href="#"><i class="fa fa-taxi"></i>  Our Vechicles</a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i>  Packages</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i>  Contact</a></li>
+                </ul>
+                <button class="b-btn">Become a Driver</button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="rowC">
+
+    <div class="cardLocate">
+        <img src="images/profile9.jpg" alt="" style="width:50%">
+        <div class="containerLocate">
+          <h4><b >John Doe</b></h4>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill blue" viewBox="0 0 16 16">
+            <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+          </svg> Verified Profile</p> 
+          <div class="row">
+            <h1>start : </h1>
+          <h4 id="start1"></h4>
+          </div>
+          <div class="row">
+            <h1>End : </h1>
+            <h4 id="end1" ></h4>
+          </div>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="conBtn" >
+            <a href="https://3fe675d0.sibforms.com/serve/MUIEAEfK74wt1w9ZhLtohOAQ3-BZME13XP2Uhh4_t2gxvjaXUzkMbJp6Fcy4Oe5MQXzckPJPGEq8l2QaSwgqDueNwDkHhisx1knM_madhJMVB66PWA-a2cp3hWG6A_3irFu9gHqCU4ZFllWqKKrHQpDHXtrILouxUEgtyDVy7feV4nIIi12JQwyXFXN3uQp-En7gCPK5iRghSSTU" class="conBtn2">Continue</a>
+          </div>
+        </div>
+      </div>
+       
+    <div class="cardLocate">
+        <img src="images/profile2.png" alt="" style="width:50%">
+        <div class="containerLocate">
+          <h4><b>Rashmika</b></h4> 
+          <p ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill blue" viewBox="0 0 16 16">
+            <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+          </svg>Verified Profile</p> 
+          <div class="row">
+            <h1>start : </h1>
+          <h4 id="start2"></h4>
+          </div>
+          <div class="row">
+            <h1>End : </h1>
+            <h4 id="end2" ></h4>
+          </div>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="conBtn" >
+            <a href="https://3fe675d0.sibforms.com/serve/MUIEAEfK74wt1w9ZhLtohOAQ3-BZME13XP2Uhh4_t2gxvjaXUzkMbJp6Fcy4Oe5MQXzckPJPGEq8l2QaSwgqDueNwDkHhisx1knM_madhJMVB66PWA-a2cp3hWG6A_3irFu9gHqCU4ZFllWqKKrHQpDHXtrILouxUEgtyDVy7feV4nIIi12JQwyXFXN3uQp-En7gCPK5iRghSSTU" class="conBtn2">Continue</a>
+          </div>
+        </div>
+      </div>
+              
+    </div>
+    
+    
+<section class="sec-5">
+	<div class="container">
+		<h2 class="heading-2" style="color: var(--white)">What About passenger says</h2>
+             
+		<div class="testimonial">
+			
+		</div>
+	</div>
+</section>
+
+<section class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447986.853145337!2d76.81114849633596!3d28.692718881263545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d047309fff32f%3A0xfc5606ed1b5d46c3!2sDelhi!5e0!3m2!1sen!2sin!4v1646818342543!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<footer class="footer-distributed">
+
+    <div class="footer-right">
+    
+    <a ><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+    
+    </div>
+    
+    <div class="footer-left">
+    <p class="footer-links">
+    <a class="link-1" href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Pricing</a>
+    <a href="#">About</a>
+    <a href="#">Faq</a>
+    <a href="#">Contact</a>
+    </p>
+    <p>Carpooling © 2023</p>
+    </div>
+    
+    </footer>
+
+
+
+
+
+    <script type="text/javascript">
+        
+    var urlString = new URL(window.location).href;
+
+        let paramString = urlString.split('?')[1];
+        let queryString = new URLSearchParams(paramString);
+        let i=1;
+        for(let pair of queryString.entries()) {
+            if(i==1){
+            document.getElementById('start1').innerText=pair[1];
+            document.getElementById('start2').innerText=pair[1];
+            i++;
+            }
+            else{
+                document.getElementById('end1').innerText=pair[1];
+                document.getElementById('end2').innerText=pair[1];
+            }
+        }
+
+        function accepeted(){
+          alert("Accepted...")
+        }
+        
+
+    // var startLoc=myUrl2.get('start');
+    // var endLoc=myUrl2.get('end');
+    // console.log(startLoc);
+
+    // document.getElementById('start').innerText=startLoc;
+    // document.getElementById('end').innerText=endLoc;
+
+    </script>
+</body>
+</html>
